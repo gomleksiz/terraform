@@ -21,7 +21,7 @@ provider "aws" {
 resource "aws_instance" "app_server" {
   ami           = var.ami
   instance_type = var.instance_type
-  key_name = "aws_key"
+  key_name = "aws_key2"
   tags = {
     Name = var.tag
   }
@@ -41,7 +41,7 @@ output "ec2_public_ip" {
 }
 
 resource "aws_key_pair" "deployer" {
-  key_name   = "aws_key"
+  key_name   = "aws_key2"
   public_key = var.ssh-public-key
 }
 
