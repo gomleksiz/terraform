@@ -46,7 +46,7 @@ resource "aws_key_pair" "deployer" {
 }
 
 resource "aws_security_group" "main" {
-    name = "main-sg"
+    name = "main-sg2"
     ingress {
         cidr_blocks = [
         "0.0.0.0/0"
